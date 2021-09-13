@@ -1,0 +1,53 @@
+/* Image_block */
+.img_block {
+	padding: 80px 0;
+}
+.img {
+	transition: transform 0.3s linear, opacity 0.3s linear;
+}
+.img.imgp {
+	width: 15%;
+}
+.img:hover {
+	transform: translateY(-25px);
+	opacity: 0.8;
+}
+.images {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	flex-wrap: wrap;
+}
+.img.img1, .img.img3 {
+	width: 22%;
+}
+.img.img2 {
+	width: 44%;
+}
+.img.imge1, .img.imge2, .img.imge3, .img.imge5, .img.imge6 {
+	width: 30%;
+}
+.img.imge1, .img.imge2, .img.imge3 {
+	padding: 0 0 2.5%;
+}
+.img.imge4, .img.imge7 {
+	width: 15%;
+}
+
+.indicator {
+	display: flex;
+	justify-content: center;
+	height: 20%;
+	transform: translateY(50%);
+}
+.dot {
+	height: 20px;
+	width: 20px;
+	background-color: #bbb;
+	border-radius: 50%;
+	margin: 25px 25px 0;
+	transition: background-color 0.3s linear;
+}
+.dot:hover, .dot.active {
+	background-color: white;
+}
